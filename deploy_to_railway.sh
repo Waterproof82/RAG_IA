@@ -19,9 +19,9 @@ if ! railway status &> /dev/null; then
     echo "No linked project found. Creating a new project..."
     
     # Get project name from user or use default
-    read -p "Enter project name (or press Enter for 'bigschool-module5'): " project_name
+    read -p "Enter project name (or press Enter for 'cloud_rag_ia'): " project_name
     if [[ -z "$project_name" ]]; then
-        project_name="bigschool-module5"
+        project_name="cloud_rag_ia"
     fi
     
     echo "Creating new Railway project: $project_name"
